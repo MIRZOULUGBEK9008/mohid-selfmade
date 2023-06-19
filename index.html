@@ -4,7 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Name of Project</title>
+  <title>Mohid</title>
+
+  <!-- FONTS  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 
   <!-- STYLES  -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -13,8 +18,54 @@
 </head>
 <body>
 
+
+  <!-- LOADER  -->
   <div class="loader-wrapper js-loader">
     <span class="loader"></span>
+  </div>
+
+  <div class="site-header-hero-wrapper">
+    <!-- SITE-HEADER -->
+    <header class="site-header">
+      <div class="site-header__container container">
+        <!-- SITE-LOGO -->
+        <a class="site-header__logo logo" href="index.html">
+          <img class="logo__img" src="img/logo.png" alt="Site logo" width="78" height="27" srcset="img/logo.png 1x, img/logo@2x.png 2x">
+        </a>
+        <!-- NAVIGATION -->
+        <nav class="site-header__sitenav sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Home</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Brands</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Recent products</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Contact</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">About</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="site-header__right header-right">
+          <a class="header-right__item" href="#">
+            <img src="img/search-icon.png" alt="Search icon" width="22" height="23" srcset="img/search-icon.png 1x, img/search-icon@2x.png 2x">
+          </a>
+          <a class="header-right__item" href="#">
+            <img src="img/auth-icon.png" alt="Auth icon" width="22" height="23" srcset="img/auth-icon.png 1x, img/auth-icon@2x.png 2x">
+          </a>
+          <a class="header-right__item shopping-cart" href="#">
+            <span class="shopping-cart__badge">1</span>
+            <img src="img/shopping-cart.png" alt="Shopping cart icon" width="22" height="23" srcset="img/shopping-cart.png 1x, img/shopping-cart@2x.png 2x">
+          </a>
+        </div>
+      </div>
+    </header>
   </div>
 
   <script src="js/main.js"></script>
