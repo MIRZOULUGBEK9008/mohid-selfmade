@@ -150,6 +150,9 @@ img {
 /* BUTTON  */
 .button {
   display: inline-block;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: normal;
   text-align: center;
   text-transform: capitalize;
   cursor: pointer;
@@ -158,6 +161,15 @@ img {
   background-color: var(--blue);
   border-radius: 0.9rem;
   border: 0;
+  width: 100%;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 0.6;
 }
 
 
@@ -309,7 +321,6 @@ img {
   right: 0.8rem;
   padding: 1.2rem 0.6rem;
   z-index: 50;
-  font-size: 1.8rem;
 }
 
 .hero__img {
@@ -364,6 +375,7 @@ img {
   margin-top: 0;
   margin-bottom: 0.9rem;
   font-size: 3.6rem;
+  color: var(--black);
 }
 
 .product-card__description {
@@ -378,4 +390,100 @@ img {
   order: -1;
   object-fit: cover;
   object-position: center;
+}
+
+
+/* SECTION-LATEST-PRODUCTS */
+.section-products__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.section-products__description {
+  text-align: center;
+  color: var(--blue);
+  font-family: var(--inter);
+  line-height: normal;
+}
+
+.section-products__title {
+  text-align: center;
+  color: var(--black);
+  font-size: 3.6rem;
+  text-transform: capitalize;
+  margin-top: 0;
+  margin-bottom: 6.5rem;
+  font-family: var(--inter);
+}
+
+.section-latest-products__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-left: -4.8rem;
+  margin-bottom: -6.4rem;
+  list-style: none;
+}
+
+.section-latest-products__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 4.8rem;
+  margin-bottom: 6.4rem;
+  font-family: var(--poppins);
+}
+
+.section-latest-products__title {
+  color: var(--black);
+  text-transform: capitalize;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+}
+
+.section-latest-products__costs {
+  display: flex;
+  align-items: center;
+}
+
+.section-latest-products__cost {
+  line-height: 1.2;
+  color: #000;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.section-latest-products__cost--old {
+  text-decoration: line-through;
+  font-size: 2rem;
+  color: var(--txt-color);
+  font-weight: 500;
+}
+
+.section-latest-products__img-wrapper {
+  padding: 2.8rem 4.2rem;
+  background-color: var(--gray);
+  order: -1;
+  margin-bottom: 1.1rem;
+}
+
+.section-latest-products__img {
+  display: block;
+  width: 25rem;
+  height: 28rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.section-latest-products__button {
+  max-width: 19.6rem;
+  margin-top: 7rem;
+  padding: 1rem 0.6rem;
+  border-radius: 1.5rem;
 }
