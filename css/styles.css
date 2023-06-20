@@ -649,3 +649,15 @@ img {
   object-fit: cover;
   object-position: center;
 }
+
+
+/* SITE-FOOTER  */
+.site-footer {
+  background-color: #0b0b0b;
+}
+
+.site-footer__container {
+  text-align: center;
+  padding: 2.2rem;
+  color: var(--white);
+}
