@@ -6,6 +6,9 @@
   --gray: #f6f6f6;
   --txt-color: #8b8e99;
   --white: #fff;
+
+  --inter: "Inter", "Arial", sans-serif;
+  --poppins: "Poppins", "Arial", sans-serif;
 }
 
 /* FONT-FACE  */
@@ -69,7 +72,7 @@ body {
   height: 100%;
   background-color: var(--white);
   color: #222;
-  font-family: "Poppins", "Arial", sans-serif;
+  font-family: var(--poppins);
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 1.25;
@@ -311,8 +314,68 @@ img {
 
 .hero__img {
   display: block;
-  width: 461px;
-  height: 563px;
+  width: 46.1rem;
+  height: 56.3rem;
   object-fit: contain;
   object-position: cover;
+}
+
+
+/* SECTION-RECOMMENTDATION */
+.section-recommendation__container {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.section-recommendation__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.section-recommendation__item {
+  width: calc((100% / 3) - 2rem);
+  border-radius: 2.2rem;
+  background-color: var(--gray);
+  font-family: var(--inter);
+  padding: 4.6rem 2.5rem 4.5rem 4rem;
+}
+
+.section-recommendation__item:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.product-card__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 17.3rem;
+}
+
+.product-card__title {
+  margin-top: 0;
+  margin-bottom: 0.9rem;
+  font-size: 3.6rem;
+}
+
+.product-card__description {
+  margin: 0;
+  color: var(--txt-color);
+}
+
+.product-card__img {
+  display: block;
+  width: 8.5rem;
+  height: 14.9rem;
+  order: -1;
+  object-fit: cover;
+  object-position: center;
 }
