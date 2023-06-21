@@ -308,14 +308,14 @@ img {
   left: 1.9rem;
   top: 50%;
   content: "";
-  width: 22px;
-  height: 22px;
+  width: 2.2rem;
+  height: 2.2rem;
   background-image: url(../img/search-icon-blue-min.svg);
   z-index: 45;
 }
 
 .hero__input {
-  padding: 0.8rem 0.8rem 0.8rem 5.6rem;
+  padding: 0.8rem 14rem 0.8rem 5.6rem;
   min-height: 6rem;
   width: 100%;
   border-radius: 1.5rem;
@@ -633,6 +633,7 @@ img {
 
 .section-cta__input {
   padding: 0.8rem 3rem;
+  margin-right: 15rem;
   min-height: 6rem;
   width: 100%;
   border: 0;
